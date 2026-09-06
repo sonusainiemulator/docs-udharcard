@@ -1,0 +1,9 @@
+{
+  "title": "Customer Mobile App",
+  "pages": [
+    "index",
+    "01-login-overview",
+    "02-view-khata",
+    "03-online-repayment"
+  ]
+}

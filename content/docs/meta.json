@@ -1,0 +1,14 @@
+{
+  "title": "Docs",
+  "pages": [
+    "index",
+    "---Merchant App---",
+    "merchant-app",
+    "---Customer App---",
+    "user-app",
+    "---Admin Panel---",
+    "admin",
+    "---UdharCard MCP---",
+    "mcp"
+  ]
+}

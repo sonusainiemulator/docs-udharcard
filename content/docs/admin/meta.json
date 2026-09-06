@@ -1,0 +1,9 @@
+{
+  "title": "Admin Portal",
+  "pages": [
+    "index",
+    "01-merchants",
+    "02-transactions",
+    "03-subscriptions-settings"
+  ]
+}

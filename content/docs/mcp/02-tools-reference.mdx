@@ -1,0 +1,15 @@
+---
+title: "02. UdharCard MCP: टूल्स संदर्भ"
+description: "उपलब्ध FastMCP टूल्स की विस्तृत स्कीमा और पैरामीटर्स।"
+---
+
+| टूल नाम | इनपुट पैरामीटर्स | विवरण |
+| :--- | :--- | :--- |
+| `login_merchant` | `phone` (string) | मर्चेंट फोन नंबर से Sanctum टोकन प्राप्त करता है |
+| `get_merchant_dashboard` | None | कुल उधार, जमा, बकाया और आज के लेन-देन का सारांश |
+| `list_customers` | `search` (string) | ग्राहकों की सूची, वर्तमान बकाया व क्रेडिट लिमिट |
+| `add_customer` | `name`, `phone`, `party_type`, `credit_limit` | खाते में नया ग्राहक/डीलर जोड़ना |
+| `add_ledger_entry` | `customer_id`, `type`, `amount`, `notes` | उधार (credit) या जमा (debit) प्रविष्टि दर्ज करना |
+| `get_customer_ledger` | `customer_id` (int) | ग्राहक का संपूर्ण पुराना खाता बही |
+| `send_payment_reminder`| `ledger_id` (int) | बकाया वसूली हेतु WhatsApp/SMS तगादा भेजना |
+| `get_merchant_reports` | None | विस्तृत वित्तीय रिपोर्ट्स प्राप्त करना |

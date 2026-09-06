@@ -1,0 +1,11 @@
+{
+  "title": "Merchant Mobile App",
+  "pages": [
+    "index",
+    "01-otp-login",
+    "02-add-customer",
+    "03-udhar-ledger",
+    "04-billing-reminders",
+    "05-reports"
+  ]
+}

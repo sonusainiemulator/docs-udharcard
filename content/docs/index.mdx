@@ -1,0 +1,66 @@
+---
+title: "UdharCard Official Documentation"
+description: "Comprehensive guide for Merchant App, Customer App, Super Admin and Model Context Protocol (MCP) AI integration."
+---
+
+
+स्वागत है **UdharCard (उधारकार्ड)** के आधिकारिक डॉक्यूमेंटेशन पोर्टल में।  
+यह पोर्टल भारतीय व्यापारियों और ग्राहकों के लिए आधुनिक डिजिटल बही-खाता, स्वचालित 28-दिवसीय बिलिंग, और AI-संचालित **Model Context Protocol (MCP)** टूल्स की संपूर्ण सचित्र और चरणबद्ध गाइड प्रदान करता है।
+
+<Callout type="info" title="Quick Links">
+  - **Live Merchant Portal**: [pay.udharcard.shop](https://pay.udharcard.shop)
+  - **Merchant MCP Guide**: [pay.udharcard.shop/mcp](https://pay.udharcard.shop/mcp)
+  - **App APK Downloads**: [GitHub Releases](https://github.com/sonusainiemulator/udharcard-merchant-app/releases)
+</Callout>
+
+## 🚀 मुख्य मॉड्यूल्स (Explore by Role)
+
+<Cards>
+  <Card
+    title="Merchant Mobile App"
+    description="दुकानदारों के लिए: पासवर्ड-मुक्त OTP लॉगिन, पार्टी जोड़ना, उधार-जमा बही-खाता, 28-दिन बिल और WhatsApp तगादा।"
+    href="/docs/merchant-app"
+  />
+  <Card
+    title="Customer User App"
+    description="ग्राहकों के लिए: विभिन्न दुकानों पर बकाया देखना, 1-टैप UPI भुगतान, डिजिटल रसीदें और SMS अलर्ट।"
+    href="/docs/user-app"
+  />
+  <Card
+    title="Admin Management Portal"
+    description="सुपर एडमिन के लिए: मर्चेंट ऑनबोर्डिंग KYC, लेन-देन ऑडिट ट्रेल, सब्सक्रिप्शन पैकेज और सिस्टम सेटिंग्स।"
+    href="/docs/admin"
+  />
+  <Card
+    title="UdharCard MCP AI Engine"
+    description="AI असिस्टेंट (Antigravity IDE, Claude, Cursor) के साथ अपनी दुकान का खाता बोलकर या लिखकर मैनेज करें।"
+    href="/docs/mcp"
+  />
+</Cards>
+
+---
+
+## 🏗️ सिस्टम आर्किटेक्चर (System Architecture)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 UdharCard Cloud Engine                     │
+│                (pay.udharcard.shop)                         │
+└──────────────┬──────────────────────────────┬───────────────┘
+               │                              │
+       ┌───────┴────────┐             ┌───────┴────────┐
+       │ Merchant App   │             │  Customer App  │
+       │ (Flutter APK)  │             │  (Flutter APK) │
+       └───────┬────────┘             └────────────────┘
+               │
+    ┌──────────┴───────────────┐
+    │  UdharCard MCP Server    │
+    │  (FastMCP Python Stdio)  │
+    └──────────┬───────────────┘
+               │
+    ┌──────────┴───────────────────────────┐
+    │ AI Clients:                          │
+    │ - Google Antigravity IDE             │
+    │ - Claude Desktop / Cursor IDE        │
+    └──────────────────────────────────────┘
+```

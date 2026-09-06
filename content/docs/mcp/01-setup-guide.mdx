@@ -1,0 +1,35 @@
+---
+title: "01. UdharCard MCP: Antigravity IDE सेटअप"
+description: "mcp_config.json में UdharCard सर्वर जोड़ने की चरणबद्ध विधि।"
+---
+
+
+Model Context Protocol (MCP) एक आधुनिक खुला मानक है जो AI मॉडल्स को सुरक्षित रूप से वास्तविक सॉफ्टवेयर और डेटाबेस से जोड़ता है।
+
+## 🛠️ Antigravity IDE में सेटअप:
+
+### 1. `mcp_config.json` खोलें
+पथ: `C:\Users\erson\.gemini\config\mcp_config.json`
+
+### 2. सर्वर परिभाषा जोड़ें:
+```json
+{
+  "mcpServers": {
+    "udharcard-admin": {
+      "command": "C:\\Python313\\python.exe",
+      "args": [
+        "C:\\Users\\erson\\.gemini\\config\\plugins\\udharcard-mcp\\server\\server.py"
+      ],
+      "env": {
+        "UDHARCARD_BASE_URL": "https://pay.udharcard.shop/api",
+        "UDHARCARD_PHONE": "9876543210",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
+```
+
+### 3. परीक्षण करें
+IDE चैट में कहें:
+> *"UdharCard मर्चेंट डैशबोर्ड चेक करो और बताओ आज कितना उधार बाकी है।"*
