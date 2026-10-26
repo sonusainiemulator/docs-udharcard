@@ -2,8 +2,41 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+:root {
+  --background: #f8f7f3;
+  --foreground: #17241d;
+  --muted-foreground: #69776d;
+  --border: #dfe5df;
+  --primary: #548063;
+  --primary-foreground: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #17241d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+}
+
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: #c9dfcf;
+  color: #17241d;
 }
 
 html > body[data-scroll-locked] {
