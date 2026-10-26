@@ -1,6 +1,15 @@
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import './global.css';
 import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Udharcard Docs',
+    template: '%s · Udharcard Docs',
+  },
+  description: 'Clear, practical documentation for building and using Udharcard.',
+};
 
 const inter = Inter({
   subsets: ['latin'],
